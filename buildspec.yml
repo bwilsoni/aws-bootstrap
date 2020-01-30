@@ -13,7 +13,9 @@ phases:
       - npm run build
 artifacts:
   files:
-    - start-service.sh - stop-service.sh - server.js
+    - start-service.sh
+    - stop-service.sh
+    - server.js
     - package.json
     - appspec.yml
     - 'node_modules/**/*'
