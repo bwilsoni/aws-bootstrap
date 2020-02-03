@@ -308,6 +308,6 @@ Outputs:
       Name: InstanceEndpoint1
   InstanceEndpoint2:
     Description: The DNS name for the created instance
-    Value: !Sub "http://${Instance.PublicDnsName}:8080"
+    Value: !Sub "http://${Instance2.PublicDnsName}:8080"
     Export:
       Name: InstanceEndpoint2
