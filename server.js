@@ -36,16 +36,3 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname()}:${port}/`);
 });
-
-
-
-
-const message = `Hello Cloud from ${hostname()} in ${STACK_NAME}\n`
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end(message);
-});
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname()}:${port}/`);
-});
