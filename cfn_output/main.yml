@@ -32,7 +32,7 @@ Resources:
   Staging:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/awsbootstrap-cfn-434898387001/ab92a1937184ae3dffd0f3d7c7ced351.template
+      TemplateURL: https://s3.amazonaws.com/awsbootstrap-cfn-434898387001/f558582681d88f843a804d36c663bb34.template
       TimeoutInMinutes: 30
       Parameters:
         EC2InstanceType:
@@ -48,7 +48,7 @@ Resources:
     Type: AWS::CloudFormation::Stack
     DependsOn: Staging
     Properties:
-      TemplateURL: https://s3.amazonaws.com/awsbootstrap-cfn-434898387001/ab92a1937184ae3dffd0f3d7c7ced351.template
+      TemplateURL: https://s3.amazonaws.com/awsbootstrap-cfn-434898387001/f558582681d88f843a804d36c663bb34.template
       TimeoutInMinutes: 30
       Parameters:
         EC2InstanceType:
